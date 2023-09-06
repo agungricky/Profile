@@ -28,43 +28,11 @@
         left: 175px;
     }
 
+    #about nav,
     #header nav {
         position: absolute;
         top: 20px;
-        left: 280px;
-    }
-
-    nav ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-    }
-
-    li {
-        margin-right: 20px;
-        font-family: cursive;
-        font-size: 20px;
-    }
-
-    nav a {
-        display: block;
-        text-decoration: none;
-        color: white;
-    }
-
-    nav a:hover {
-        background-color: #828282;
-        padding: 10px;
-        border-radius: 10px;
-        color: greenyellow;
-    }
-
-    nav a.active {
-        background-color: #828282;
-        color: greenyellow;
-        border-radius: 20px;
-        padding: 5px;
+        right: 20px;
     }
 
     nav .offcanvas-title {
@@ -75,6 +43,7 @@
         font-size: 20px;
     }
 
+    #about #nav_dekstop,
     #header #nav_dekstop {
         display: none;
     }
@@ -89,17 +58,130 @@
         text-align: left;
         padding-left: 20px;
         background-color: rgba(255, 255, 255, 0.2);
-
     }
 
+    /* About */
+
+    #about h1 {
+        font-size: 25px;
+        top: 30px;
+        left: 5px;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .solid-background-div {
+        position: absolute;
+        top: 80px;
+        width: 90%;
+        height: 85%;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        margin: 0px 10px;
+    }
+
+    .text h3 {
+        margin: 0px;
+        padding: 0px;
+        font-size: 1rem;
+    }
+
+    .text p {
+        margin: 0px;
+        padding: 0px;
+        font-size: 15px;
+        color: rgb(146, 146, 138);
+    }
+
+    .text hr {
+        width: 98%;
+        margin-top: 10px;
+    }
+
+    .content {
+        text-align: center;
+    }
+
+    .content img {
+        border-radius: 100%;
+        width: 150px;
+        margin: auto;
+    }
+
+    .content .kata {
+        position: absolute;
+        top: 200px;
+        right: 60px;
+        text-align: center;
+    }
+
+    .content .kata #content-h1,
+    .kata #content-h2 {
+        font-size: 15px;
+        text-shadow: none;
+        top: 20px;
+        font-weight: normal;
+    }
+
+    .kata hr {
+        width: 250px;
+        border-top: 5px solid #2eff35;
+        border-radius: 10px;
+        margin: 25px 0px;
+        /* left: 20px; */
+    }
+
+    /* About */
+
 }
+
 
 /* Media query untuk perangkat dengan lebar layar antara 769px hingga 1024px */
 @media (min-width: 769px) and (max-width: 1024px) {}
 
 /* Media query untuk perangkat dengan lebar layar lebih dari 1024px */
 @media (min-width: 1025px) {
+
+    #about .navbar,
     #header .navbar {
         display: none;
+    }
+
+    .solid-background-div {
+        position: absolute;
+        top: 10px;
+        left: 0px;
+        width: 90%;
+        height: 80%;
+        background-color: rgba(0, 0, 0, 0.5);
+        margin: 90px 50px 30px 70px;
+        color: white;
+    }
+
+    #about nav ul {
+        position: absolute;
+        top: -310px;
+        right: -1050px;
+    }
+
+    .content .kata {
+        position: absolute;
+        top: 80px;
+        right: 450px;
+        text-align: center;
+    }
+
+    .content .kata #content-h1,
+    .kata #content-h2 {
+        font-size: 20px;
+        text-shadow: none;
+        top: 20px;
+        font-weight: normal;
+    }
+
+    .kata hr {
+        width: 400px;
+        border-top: 5px solid #2eff35;
+        border-radius: 10px;
     }
 }
