@@ -32,7 +32,7 @@
     #header nav {
         position: absolute;
         top: 20px;
-        right: 20px;
+        right: 15px;
     }
 
     nav .offcanvas-title {
@@ -62,7 +62,7 @@
 
     /* About */
 
-    #about h1 {
+    #about .h1-nav {
         font-size: 25px;
         top: 30px;
         left: 5px;
@@ -100,6 +100,8 @@
 
     .content {
         text-align: center;
+        max-height: 85%;
+        overflow: auto;
     }
 
     .content img {
@@ -109,17 +111,17 @@
     }
 
     .content .kata {
-        position: absolute;
-        top: 200px;
-        right: 60px;
+        /* position: absolute; */
         text-align: center;
+        width: 100%;
+        /* background-color: #2eff35; */
     }
 
     .content .kata #content-h1,
     .kata #content-h2 {
         font-size: 15px;
         text-shadow: none;
-        top: 20px;
+        top: 5px;
         font-weight: normal;
     }
 
@@ -127,8 +129,15 @@
         width: 250px;
         border-top: 5px solid #2eff35;
         border-radius: 10px;
-        margin: 25px 0px;
-        /* left: 20px; */
+        margin: 10px auto;
+    }
+
+    .kata p {
+        width: 95%;
+        /* background-color: #2eff35; */
+        margin: 0px auto;
+        padding: 0px 10px;
+        text-align: justify;
     }
 
     /* About */
@@ -166,22 +175,25 @@
 
     .content .kata {
         position: absolute;
-        top: 80px;
-        right: 450px;
+        width: 70%;
+        top: 90px;
+        right: 50px;
         text-align: center;
     }
 
-    .content .kata #content-h1,
-    .kata #content-h2 {
+    .content .kata #content-h1 {
         font-size: 20px;
         text-shadow: none;
-        top: 20px;
         font-weight: normal;
+        left: 0px;
+        margin-top: 10px;
     }
 
     .kata hr {
         width: 400px;
         border-top: 5px solid #2eff35;
         border-radius: 10px;
+        margin: 0px auto;
+        margin-bottom: 10px;
     }
 }
