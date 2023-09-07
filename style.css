@@ -59,6 +59,12 @@ body {
     border-radius: 10px;
 }
 
+.dropdown-menu {
+    top: 0px;
+    left: 0px;
+    margin: 0px;
+}
+
 nav {
     position: absolute;
     top: 350px;
@@ -96,6 +102,11 @@ nav a.active {
     color: greenyellow;
     border-radius: 20px;
     padding: 5px;
+}
+
+.nav-link:active {
+    background-color: transparent;
+    margin: 0px;
 }
 
 .sosial_media {
