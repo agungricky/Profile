@@ -5,17 +5,25 @@
         position: relative;
     }
 
+/* =============================< Halaman Home >=========================== */
+
     #header h1::first-letter {
         font-size: 60px;
     }
 
+    #header .body-header{
+        height: 100vh;
+    }
+
     #header h1 {
         font-size: 40px;
+        position: absolute;
         top: 70px;
         left: 25px;
     }
 
     #header h2 {
+        position: absolute;
         top: 140px;
         left: 25px;
         font-size: 20px;
@@ -28,6 +36,15 @@
         left: 175px;
     }
 
+    .nav-relativ {
+        position: absolute;
+        top: 82px;
+    }
+
+/* =============================</ Halaman Home >=========================== */
+
+
+/* =============================< Navbar Mobile >=========================== */
     #about nav,
     #header nav {
         position: absolute;
@@ -42,26 +59,10 @@
     nav .offcanvas-title::first-letter {
         font-size: 20px;
     }
+/* =============================</ Navbar Mobile >=========================== */
 
-    #about #nav_dekstop,
-    #header #nav_dekstop {
-        display: none;
-    }
 
-    .sosial_media {
-        display: inline-block;
-        top: 180px;
-        left: 50px;
-    }
-
-    .footer {
-        text-align: left;
-        padding-left: 20px;
-        background-color: rgba(255, 255, 255, 0.2);
-    }
-
-    /* About */
-
+/* =============================< Halaman About >=========================== */
     #about .h1-nav {
         font-size: 25px;
         top: 30px;
@@ -87,8 +88,6 @@
     }
 
     .text p {
-        margin: 0px;
-        padding: 0px;
         font-size: 15px;
         color: rgb(146, 146, 138);
     }
@@ -111,10 +110,8 @@
     }
 
     .content .kata {
-        /* position: absolute; */
         text-align: center;
         width: 100%;
-        /* background-color: #2eff35; */
     }
 
     .content .kata #content-h1,
@@ -125,36 +122,22 @@
         font-weight: normal;
     }
 
-    .kata hr {
-        width: 250px;
-        border-top: 5px solid #2eff35;
-        border-radius: 10px;
-        margin: 10px auto;
-    }
+/* =============================</ Halaman About >=========================== */
 
-    .kata p {
-        width: 95%;
-        /* background-color: #2eff35; */
-        margin: 0px auto;
-        padding: 0px 10px;
-        text-align: justify;
-    }
 
-    /* About */
+/* =============================< Halaman Footer >=========================== */
+    .footer {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
 
 }
 
 
 /* Media query untuk perangkat dengan lebar layar antara 769px hingga 1024px */
-@media (min-width: 769px) and (max-width: 1024px) {}
+/* @media (min-width: 769px) and (max-width: 1024px) {} */
 
-/* Media query untuk perangkat dengan lebar layar lebih dari 1024px */
+/* Media query untuk perangkat dengan lebar layar lebih dari 1024px / Desktop */
 @media (min-width: 1025px) {
-
-    #about .navbar,
-    #header .navbar {
-        display: none;
-    }
 
     .solid-background-div {
         position: absolute;
@@ -171,29 +154,5 @@
         position: absolute;
         top: -310px;
         right: -1050px;
-    }
-
-    .content .kata {
-        position: absolute;
-        width: 70%;
-        top: 90px;
-        right: 50px;
-        text-align: center;
-    }
-
-    .content .kata #content-h1 {
-        font-size: 20px;
-        text-shadow: none;
-        font-weight: normal;
-        left: 0px;
-        margin-top: 10px;
-    }
-
-    .kata hr {
-        width: 400px;
-        border-top: 5px solid #2eff35;
-        border-radius: 10px;
-        margin: 0px auto;
-        margin-bottom: 10px;
     }
 }

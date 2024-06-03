@@ -12,20 +12,20 @@
 </head>
 
 <body>
-    <div class="container-fluid" id="home">
-        <div class="container">
-            <section id="header">
+    <div class="container">
+        <section id="header">
+            <div class="d-flex flex-column justify-content-center body-header ml-md-5">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1>Ricky Agung S.</h1>
-                        <h2>Saya Seorang Mahasiswa</h2>
-                        <hr class="border border-success border-3 opacity-75">
+                        <h1 class="fw-bold text-light">Ricky Agung S.</h1>
+                        <h2 class="text-light mt-md-3 mt-sm-0">Saya Seorang Mahasiswa</h2>
+                        <hr class="border border-success border-3 opacity-75 position-absolute">
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-12">
-                        <nav class="navbar navbar-dark fixed-top">
+                        <nav class="navbar navbar-dark fixed-top d-md-none">
                             <div class="container-fluid">
                                 <a class="navbar-brand" href="#"></a>
                                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
@@ -42,7 +42,7 @@
                                             data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                     </div>
                                     <div class="offcanvas-body text-center">
-                                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                        <ul class="navbar-nav d-flex justify-content-end flex-grow-1 pe-3">
                                             <li class="nav-item">
                                                 <a class="nav-link active" aria-current="page" href="index.html"><i
                                                         class="fa-solid fa-house" style="color: #e2e2e2;"></i> Home</a>
@@ -58,16 +58,11 @@
                                                     Selengkapnya
                                                 </a>
                                                 <ul class="dropdown-menu dropdown-menu-dark">
-                                                    <li><a class="dropdown-item" href="datadiri.html">Data Diri</a></li>
-                                                    <li><a class="dropdown-item" href="R_pendidikan.html">Riwayat
-                                                            Pendidikan</a></li>
-                                                    <li><a class="dropdown-item" href="R_prestasi.html">Riwayat
-                                                            Prestasi</a></li>
-                                                    <li><a class="dropdown-item" href="#">Riwayat Pekerjaan</a></li>
-                                                    <li><a class="dropdown-item" href="#">Keahlian</a></li>
-                                                    <li><a class="dropdown-item" href="#">Galery</a></li>
+                                                    <li><a class="dropdown-item" href="resume.html">Resume</a></li>
+                                                    <li><a class="dropdown-item" href="https://github.com/agungricky" target="_blank">MyProject</a></li>
+                                                    <li><a class="dropdown-item" href="prestasi.html">Prestasi</a></li>
                                                     <hr class="mx-4" style="position: unset; width: 80%;">
-                                                    <li><a class="dropdown-item" href="#">Kirim Pesan</a></li>
+                                                    <li><a class="dropdown-item" href="mailto:agungricky07@gmail.com?subject=Halo%20Ricky&body=">Kirim Pesan</a></li>
                                                 </ul>
                                             </li>
                                         </ul>
@@ -78,42 +73,43 @@
                     </div>
                 </div>
 
-                <nav id="nav_dekstop">
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="">Resume</a>
-                        </li>
-                        <li><a href="">myProject</a></li>
-                        <li><a href="">Portofolio</a></li>
-                        <li><a href="">Contact</a>
-                        </li>
-                    </ul>
-                </nav>
+                <div class="d-none d-md-inline">
+                    <nav id="nav_dekstop">
+                        <ul class="d-flex m-md-0 p-md-0">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="resume.html">Resume</a>
+                            </li>
+                            <li><a href="https://github.com/agungricky" target="_blank">MyProject</a></li>
+                            <li><a href="prestasi.html">Prestasi</a></li>
+                            <li><a href="mailto:agungricky07@gmail.com?subject=Halo%20Ricky&body=">Contact</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
 
-                <div class="sosial_media">
-                    <a href="https://www.instagram.com/ricky_story00/" target="_blank"><i
-                            class="fa-brands fa-instagram fa-sm rounded-circle fa-beat-fade"></i></a>
-                    <a href="https://web.facebook.com/mbokeng.mamio/" target="_blank"><i
-                            class="fa-brands fa-facebook-f fa-sm rounded-circle"></i></a>
-                    <a href="https://mail.google.com/mail/u/0/#inbox?compose=new" target="_blank"><i
-                            class="fa-solid fa-envelope fa-sm rounded-circle"></i></a>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="sosial_media nav-relativ">
+                            <a href="https://www.instagram.com/ricky_story00/" target="_blank"><i
+                                    class="fa-brands fa-instagram fa-sm rounded-circle fa-beat-fade"></i></a>
+                            <a href="https://web.facebook.com/mbokeng.mamio/" target="_blank"><i
+                                    class="fa-brands fa-facebook-f fa-sm rounded-circle"></i></a>
+                            <a href="mailto:agungricky07@gmail.com?subject=Halo%20Ricky&body=" target="_blank"><i
+                                    class="fa-solid fa-envelope fa-sm rounded-circle"></i></a>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="row">
                     <div class="col-xs-12">
-                        <div class="me-5 footer">
-                            <span>© CopyRight 2023 [Ricky Agung Sumiranto].</span>
+                        <div class="footer position-fixed w-100 text-start text-md-center">
+                            <span class="text-light ms-4 ms-md-0">© CopyRight 2023 [Ricky Agung Sumiranto].</span>
                         </div>
-
                     </div>
                 </div>
-            </section>
-            <section id="about">
-
-            </section>
-        </div>
-
+            </div>
+        </section>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>

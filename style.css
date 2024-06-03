@@ -13,42 +13,23 @@ body {
     background-position: right bottom;
     width: 100%;
     position: relative;
+    overflow: hidden;
+}
+/* =============================< Halaman Home >=========================== */
+
+#header .body-header {
+    height: 100vh;
+    padding: 15px 0px 0px 35px;
 }
 
 #header h1 {
     font-size: 70px;
-    font-weight: bold;
-    color: #ffffff;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.9);
-    position: absolute;
-    top: 150px;
-    left: 160px;
 }
 
 #header h2 {
-    color: white;
-    position: absolute;
-    top: 250px;
-    left: 160px;
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
-}
-
-.text h3 {
-    margin: 0px;
-    padding: 0px;
-}
-
-.text p {
-    margin: 0px;
-    padding: 0px;
-    font-size: 19px;
-    color: rgb(104, 104, 99);
-}
-
-.text hr {
-    width: 98%;
-    margin-left: 0px;
 }
 
 #header hr {
@@ -59,10 +40,9 @@ body {
     border-radius: 10px;
 }
 
-.dropdown-menu {
-    top: 0px;
-    left: 0px;
-    margin: 0px;
+.nav-relativ {
+    height: 100px;
+    margin-top: 100px;
 }
 
 nav {
@@ -73,9 +53,6 @@ nav {
 
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
 }
 
 li {
@@ -85,7 +62,6 @@ li {
 }
 
 nav a {
-    display: block;
     text-decoration: none;
     color: white;
 }
@@ -97,24 +73,6 @@ nav a:hover {
     color: greenyellow;
 }
 
-nav a.active {
-    background-color: #828282;
-    color: greenyellow;
-    border-radius: 20px;
-    padding: 5px;
-}
-
-.nav-link:active {
-    background-color: transparent;
-    margin: 0px;
-}
-
-.sosial_media {
-    position: absolute;
-    bottom: 190px;
-    left: 200px;
-}
-
 .sosial_media i {
     font-size: 20px;
     color: #ffffff;
@@ -123,18 +81,20 @@ nav a.active {
     padding: 20px 15px;
 }
 
-.footer {
-    color: white;
-    background-color: rgba(255, 255, 255, 0.09);
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    font-size: 15px;
-    text-align: center;
+/* ============================= </ Halaman Home > =========================== */
+
+/* ============================= < Halaman About > =========================== */
+.text p {
+    margin: 0px;
+    padding: 0px;
+    font-size: 19px;
+    color: rgb(104, 104, 99);
 }
 
-/* About */
+.kata hr {
+    border-top: 5px solid #2eff35;
+    border-radius: 10px;
+}
 
 #about .h1-nav {
     font-size: 50px;
@@ -146,8 +106,8 @@ nav a.active {
     margin-left: 130px;
 }
 
-.solid-background-div .text {
-    margin: 10px 20px;
+.content {
+    height: 65vh;
 }
 
 .content img {
@@ -158,16 +118,25 @@ nav a.active {
 
 .kata p {
     width: 95%;
-    /* background-color: #2eff35; */
     margin: 0px auto;
     padding: 0px 10px;
     text-align: justify;
 }
 
+/* =============================</ Halaman About >=========================== */
+
+/* =============================< Halaman Prestasi >=========================== */
+.content_prestasi{
+    height: 60vh;
+    overflow: auto;
+}
+/* =============================</ Halaman Prestasi >=========================== */
 
 
-/* 
-.kata table td {
-    text-align: left;
-    padding-right: 80px;
-} */
+/* =============================< Halaman Footer >=========================== */
+.footer {
+    background-color: rgba(255, 255, 255, 0.09);
+    bottom: 0;
+    left: 0;
+    font-size: 15px;
+}
